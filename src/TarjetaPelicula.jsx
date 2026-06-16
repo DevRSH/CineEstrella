@@ -2,9 +2,9 @@ import poster from './assets/Pelicula.jpg'
 
 function TarjetaPelicula({ entradas }) {
   const nombrePelicula = 'Toy Story'
-  const precioEntrada = 4500
-  const entradasNumericas = Number(entradas) || 0
-  const totalPagar = precioEntrada * entradasNumericas
+  const precioEntrada = 6500
+  const numeroEntradas = Number(entradas) || 0
+  const totalPagar = precioEntrada * numeroEntradas
 
   return (
     <section className="tarjeta-pelicula" aria-label="Tarjeta de pelicula">
@@ -14,7 +14,7 @@ function TarjetaPelicula({ entradas }) {
         <strong>Precio por entrada:</strong> ${precioEntrada.toLocaleString('es-CL')}
       </p>
       <p>
-        <strong>Entradas:</strong> {entradasNumericas}
+        <strong>Entradas:</strong> {numeroEntradas}
       </p>
       <p className="total">
         <strong>Total a pagar:</strong> ${totalPagar.toLocaleString('es-CL')}

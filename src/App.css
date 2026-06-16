@@ -1,0 +1,93 @@
+.app {
+  min-height: 100vh;
+  width: min(860px, 92%);
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  background-color: #fff8ee;
+  box-shadow: 0 16px 30px rgba(39, 35, 28, 0.12);
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  color: #b73a16;
+}
+
+.encabezado p {
+  margin-top: 0.5rem;
+  color: #563e28;
+  font-size: 1.1rem;
+}
+
+.control-entradas {
+  width: min(420px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: center;
+}
+
+.control-entradas label {
+  font-weight: 700;
+  color: #3a2d21;
+}
+
+.control-entradas input {
+  border: 2px solid #c89c6f;
+  border-radius: 0.7rem;
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.control-entradas input:focus {
+  outline: 2px solid #d76d2b;
+  outline-offset: 2px;
+}
+
+.tarjeta-pelicula {
+  width: min(420px, 100%);
+  background-color: #ffffff;
+  border: 1px solid #ebd9c4;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tarjeta-pelicula .poster {
+  width: 100%;
+  border-radius: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.tarjeta-pelicula h2 {
+  margin: 0 0 0.6rem;
+  color: #332213;
+}
+
+.tarjeta-pelicula p {
+  margin: 0.45rem 0;
+  color: #4f3924;
+}
+
+.tarjeta-pelicula .total {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  color: #7a2715;
+}
+
+@media (max-width: 640px) {
+  .app {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.2rem;
+  }
+}
